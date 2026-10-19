@@ -1,0 +1,78 @@
+/* Cài đặt cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Định dạng Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Định dạng Nav */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Định dạng khung giữa bằng Flexbox thay cho Float */
+.main-wrapper {
+    display: flex;
+}
+
+/* Định dạng Section (Nội dung chính) */
+section {
+    flex: 3; /* Chiếm 3/4 không gian */
+    padding: 20px;
+}
+
+article {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4CAF50;
+}
+
+/* Định dạng Aside (Sidebar) */
+aside {
+    flex: 1; /* Chiếm 1/4 không gian */
+    background-color: #d4edda;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+/* Định dạng Footer */
+footer {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
